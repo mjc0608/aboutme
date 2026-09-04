@@ -1,0 +1,32 @@
+title: Jiacheng Ma
+url: https://jcma.me
+permalink: pretty
+
+highlighter: none
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: null
